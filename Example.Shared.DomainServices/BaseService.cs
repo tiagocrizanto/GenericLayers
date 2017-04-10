@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Example.Shared.DomainServices
 {
-    public class BaseService<Entity, TContext> : IBaseService<Entity, DbContext> where Entity : class where TContext : DbContext
+    public class BaseService<Entity, TContext> : IBaseService<Entity, TContext> where Entity : class where TContext : DbContext
     {
         public readonly IBaseRepository<Entity, TContext> _baseRepository;
 
